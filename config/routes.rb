@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   #routes to main pages
   root "apps#index"
+  get"/apps", to: "apps#index" #still root page
   get "/about", to: "apps#about"
 
   #route to app pages
